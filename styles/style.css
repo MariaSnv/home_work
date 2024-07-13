@@ -247,9 +247,8 @@
   overflow: visible;
   margin-right: 2.375em;
 }
-.avone__second-img-wrap::after {
+.avone__small-img-wrap {
   position: absolute;
-  content: url(../img/avone/sm_avone_second_col.jpg);
   top: 86.031%;
   left: 59.34%;
   border-left: 20px solid #fff;
@@ -342,7 +341,6 @@
 }
 .footer__btn {
   position: absolute;
-  font-weight: 600;
   right: 4.32%;
   top: 11%;
   font-size: clamp(12px, 2vw, 15px);
@@ -503,14 +501,30 @@
 @media (max-width: 750px) {
   .avone__row {
     flex-direction: column;
-    width: 50%;
-    margin-bottom: 20%;
-  }
+    width: 90%;
 
-  .avone__second-img-wrap::after {
+    margin: 0 2em;
+  }
+  .avone__second-img-wrap {
+    margin-right: 0;
+  }
+  .avone__small-img-wrap {
     border: none;
     top: 100%;
-    right: 50%;
+    left: 50%;
+    margin-top: 2em;
+  }
+
+  .avone__text {
+    top: 118%;
+    left: 1.93%;
+  }
+  .avone__hgroup {
+    margin-bottom: 0;
+  }
+
+  .tachen {
+    margin-top: 18em;
   }
 }
 
